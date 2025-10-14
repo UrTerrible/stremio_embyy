@@ -1,0 +1,39 @@
+{
+  "id": "org.streambridge.embyresolver.custom1",
+  "version": "1.1.0",
+  "name": "StreamBridge: Emby Custom #1",
+  "description": "Stream media from your Emby server using IMDb/TMDB IDs.",
+  "catalogs": [],
+  "resources": [
+    {
+      "name": "stream",
+      "types": ["movie", "series"],
+      "idPrefixes": ["tt", "imdb:", "tmdb:"]
+    }
+  ],
+  "types": ["movie", "series"],
+  "behaviorHints": {
+    "configurable": true,
+    "configurationRequired": false
+  },
+  "config": [
+    {
+      "key": "serverUrl",
+      "type": "text",
+      "title": "Emby Server URL",
+      "required": true
+    },
+    {
+      "key": "userId",
+      "type": "text",
+      "title": "Emby User ID",
+      "required": true
+    },
+    {
+      "key": "accessToken",
+      "type": "text",
+      "title": "Emby Access Token",
+      "required": true
+    }
+  ]
+}
